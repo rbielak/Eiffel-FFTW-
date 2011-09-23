@@ -1,0 +1,46 @@
+This library is a very basic Eiffel interface to the FFTW library.
+To download the code for FFTW go to http://www.fftw.org.
+
+We've only implemented the basic functionality we needed.
+Basically we did the real one-, two-, and three-dimensional
+fourier transforms.
+
+The following classes are part of this library:
+
+FFTW_MATRIX
+	- represents matrices that are used as input and outputs 
+      of the 2D fourier transforms
+
+FFTW_3DTENSOR
+	- a tensor that is the input and output of the 3D transform
+
+FOURIER_OPERATOR
+	- an abstract specification for a fourier operator class
+
+FFTW_1D_FOURIER_OPERATOR
+	- one dimensional real transform, transforms ARRAY [DOUBLE]
+
+FFTW_2D_FOURIER_OPERATOR
+	- two dimensional real transform, transforms FFTW_MATRIX
+	
+
+FFTW_3D_FOURIER_OPERATOR
+	- three dimensional real transform, transforms FFTW_3DTENSOR
+
+
+To find out more about this library visit: http://www.grator.org
+
+
+The library has been tested mosly with Halstenbach compiler, but
+is should be real easy to get it to work with ISE. We have
+used this code on Solaris, Linux and Windows NT.
+
+The "test" directory contains some test classes and an Ace file
+for Halstenbach.
+
+
+	Richie Bielak <richieb@calfp.com>
+
+March 10, 2000
+
+

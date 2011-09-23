@@ -1,0 +1,4 @@
+* March 10, 2000 richieb@calfp.com
+	Initial release.
+	Replaced all occurences of VECTOR class with ARRAY [DOUBLE]
+	

@@ -1,0 +1,8 @@
+* March 10, 2000 richieb@calfp.com
+	Initial release.
+	Replaced all occurences of VECTOR class with ARRAY [DOUBLE]
+	
+* November 5, 2002 richieb@netlabs.net
+	Small fixes to get it to compile under Eiffel Studio 1.5
+
+	

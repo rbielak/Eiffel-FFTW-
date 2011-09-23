@@ -1,0 +1,29 @@
+system
+	test_all
+
+root
+
+	test_all (root_cluster): "make"
+
+
+default
+
+	assertion (require);
+	precompiled ("$ISE_EIFFEL/precomp/spec/linux-glibc2.1/base");
+	address_expression (yes)
+	
+
+cluster
+
+	root_cluster: 	".";
+	fftw_lib: "../lib"
+
+external
+
+	object:
+	 "/usr/local/lib/librfftw.a",
+	 "/usr/local/lib/libfftw.a"
+
+
+end
+
